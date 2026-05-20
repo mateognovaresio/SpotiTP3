@@ -1,0 +1,304 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.app-header {
+  background-color: #222;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #333;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #a855f7;
+}
+
+.app-main {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.page h1 {
+  margin-bottom: 1rem;
+}
+
+.app-footer {
+  background-color: #222;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #aaa;
+  border-top: 1px solid #333;
+}
+
+.search-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.search-input {
+  flex: 1;
+  padding: 0.7rem 1rem;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background-color: #2a2a2a;
+  color: white;
+  font-size: 1rem;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #a855f7;
+}
+
+.search-btn {
+  padding: 0.7rem 1.5rem;
+  background-color: #a855f7;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.search-btn:hover {
+  background-color: #9333ea;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.card {
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  overflow: hidden;
+  display: block;
+  color: white;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card-img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.card-img-placeholder {
+  background-color: #444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: #888;
+}
+
+.card-body {
+  padding: 0.8rem;
+}
+
+.card-body h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fav-btn {
+  width: 100%;
+  padding: 0.4rem;
+  background-color: #333;
+  color: white;
+  border: 1px solid #555;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+.fav-btn:hover {
+  background-color: #444;
+}
+
+.favorites-section {
+  margin-bottom: 2rem;
+}
+
+.favorites-section h2,
+section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  color: #aaa;
+}
+
+.error {
+  background-color: #4a1a1a;
+  color: #ff8888;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid #884444;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: #a855f7;
+  font-size: 0.95rem;
+}
+
+.back-btn:hover {
+  text-decoration: underline;
+}
+
+.artist-header {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #222;
+  border-radius: 8px;
+}
+
+.artist-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.genres {
+  color: #aaa;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}
+
+.card-info {
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+.album-header {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #222;
+  border-radius: 8px;
+}
+
+.album-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.track-list {
+  list-style: none;
+  background-color: #222;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.track-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid #333;
+}
+
+.track-item:last-child {
+  border-bottom: none;
+}
+
+.track-item:hover {
+  background-color: #2a2a2a;
+}
+
+.track-number {
+  width: 30px;
+  color: #aaa;
+  text-align: center;
+}
+
+.track-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.track-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.track-artists {
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+.track-duration {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.play-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #a855f7;
+  color: white;
+  border: none;
+  font-size: 1rem;
+}
+
+.play-btn:hover {
+  background-color: #9333ea;
+}
+
+.no-preview {
+  font-size: 0.75rem;
+  color: #666;
+  width: 70px;
+  text-align: center;
+}
+
+.player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #222;
+  padding: 0.8rem;
+  border-top: 1px solid #333;
+  display: flex;
+  justify-content: center;
+}
+
+.player audio {
+  width: 100%;
+  max-width: 500px;
+}
