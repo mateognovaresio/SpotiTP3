@@ -43,8 +43,6 @@ function PaginaArtista() {
         {imagen && <img src={imagen} alt={artista.name} className="artist-img" />}
         <div>
           <h1>{artista.name}</h1>
-          <p>{artista.followers.total} seguidores</p>
-          <p className="genres">{artista.genres.join(', ')}</p>
         </div>
       </div>
 
