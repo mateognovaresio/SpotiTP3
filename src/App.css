@@ -279,13 +279,6 @@ section h2 {
   background-color: #9333ea;
 }
 
-.no-preview {
-  font-size: 0.75rem;
-  color: #666;
-  width: 70px;
-  text-align: center;
-}
-
 .player {
   position: fixed;
   bottom: 0;
@@ -294,11 +287,12 @@ section h2 {
   background-color: #222;
   padding: 0.8rem;
   border-top: 1px solid #333;
-  display: flex;
-  justify-content: center;
 }
 
-.player audio {
+.player iframe {
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+  border: none;
 }

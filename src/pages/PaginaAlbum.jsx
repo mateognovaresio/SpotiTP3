@@ -9,7 +9,7 @@ function PaginaAlbum() {
   const [album, setAlbum] = useState(null)
   const [cargando, setCargando] = useState(true)
   const [error, setError] = useState(null)
-  const [preview, setPreview] = useState(null)
+  const [reproduciendo, setReproduciendo] = useState(null)
 
   useEffect(() => {
     async function cargar() {
@@ -56,20 +56,22 @@ function PaginaAlbum() {
             <div className="track-info">
               <p className="track-name">{track.name}</p>
             </div>
-            {track.preview_url ? (
-              <button className="play-btn" onClick={() => setPreview(track.preview_url)}>
-                ▶
-              </button>
-            ) : (
-              <span className="no-preview">sin preview</span>
-            )}
+            <button className="play-btn" onClick={() => setReproduciendo(track.id)}>
+              ▶
+            </button>
           </li>
         ))}
       </ul>
 
-      {preview && (
+      {reproduciendo && (
         <div className="player">
-          <audio src={preview} controls autoPlay />
+          <iframe
+            title="reproductor"
+            src={'https://open.spotify.com/embed/track/' + reproduciendo}
+            width="100%"
+            height="80"
+            allow="encrypted-media"
+          ></iframe>
         </div>
       )}
     </div>
