@@ -39,4 +39,4 @@ Trabajo Practico 3 de Desarrollo de Software (UTN). SPA en React que consume la 
 
 ## Deploy
 
-(Pendiente de subir a Vercel/Netlify)
+https://spoti-tp-3.vercel.app/
